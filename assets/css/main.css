@@ -1,5 +1,7 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -243,6 +245,8 @@ input, select, textarea {
 		}
 
 /* Row */
+
+
 
 	.row {
 		display: flex;
@@ -729,7 +733,29 @@ input, select, textarea {
 						}
 
 		}
+		#container {
+			/* Center the text in the viewport. */
+			position: absolute;
+			margin: auto;
+			width: 100vw;
+			height: 80pt;
+			top: 0;
+			bottom: 0;
+			filter: url(#threshold) blur(0.6px);
+}
 
+#text1, #text2 {
+	position: absolute;
+	width: 100%;
+	display: inline-block;
+	
+	font-family: 'Raleway', sans-serif;
+	font-size: 80pt;
+	
+	text-align: center;
+	
+	user-select: none;
+}
 		@media screen and (max-width: 1280px) {
 
 			.row {
@@ -1874,6 +1900,8 @@ input, select, textarea {
 				width: 100%;
 			}
 
+
+
 /* Icon */
 
 	.icon {
@@ -1964,14 +1992,23 @@ input, select, textarea {
 					background: #e1b89b;
 				}
 
-			.icon.circle.fa-dribbble {
-				background: #da83ae;
+			.icon.circle.fa-instagram {
+				background: #1e3050;
 				color: #fff;
 			}
 
-				.icon.circle.fa-dribbble:hover {
-					background: #df93b8;
+				.icon.circle.fa-instagram:hover {
+					background: #1e3050;
 				}
+
+				.icon.circle.fa-tiktok {
+					background: #800080;
+					color: #fff;
+				}
+	
+					.icon.circle.fa-tiktok:hover {
+						background: #800080;
+					}
 
 		.icon.featured {
 			cursor: default;
@@ -2163,8 +2200,8 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			background: #ffffff;
-			border-color: #216477;
-			color: #216477 !important;
+			border-color: #000000;
+			color: #000000 !important;
 		}
 
 			input[type="button"].primary:hover,
@@ -2478,9 +2515,18 @@ input, select, textarea {
 
 .banner {
 	width: 50%;
-	height: 25%;
+	height: 50%;
 	position: relative;
-	top: -100px;
+	top: -150px;
+	padding-bottom: -
+}
+
+.logo {
+	width: 9%;
+	height: 9%;
+	position: relative;
+	left: -70px;
+	top: -70px;
 }
 
 	@-moz-keyframes reveal-banner {
@@ -2640,8 +2686,8 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #E8EEF4;
-		color: #7c8081;
+		background: #000000;
+		color: #fff;
 		padding: 5em 5em 10em 5em;
 		text-align: center;
 	}
